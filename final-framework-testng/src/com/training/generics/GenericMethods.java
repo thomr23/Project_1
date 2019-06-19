@@ -42,15 +42,18 @@ public class GenericMethods {
 		}else if(type.equals("xpath")){
 			element = driver.findElement(By.xpath(locator));
 		}
-		if(checkSingleEntry(locator, type)){
+		else if(type.equals("linktext")){
+			element = driver.findElement(By.linkText(locator));
+		}
+			if(checkSingleEntry(locator, type)){
 			System.out.println("Element Found and Returned");
 			return element;
 		}	
 		System.out.println("Sorry Element not found, so not returned...");
 		return null;
+		
+		}
 
-
-	}
 	
 	
 	// shall give if it has multiple entries as a list in DOM 
