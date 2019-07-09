@@ -3,7 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.training.sanity.tests.ELTC_046"/>
+      <class name="com.training.sanity.tests.ELTC_044"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.training.sanity.tests.ELTC_044">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Afterclass"/>
+          <include name="setUp"/>
+          <include name="validLoginTest"/>
+          <include name="setUpBeforeClass"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.ELTC_044 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

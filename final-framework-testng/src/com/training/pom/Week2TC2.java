@@ -153,9 +153,6 @@ import com.relevantcodes.extentreports.LogStatus;
 		}
 		
 		
-		
-		
-		
 		public void clickReplybutton(){
 			this.clickReplybutton.click();
 			test.log(LogStatus.INFO, "Click on Reply Button");
